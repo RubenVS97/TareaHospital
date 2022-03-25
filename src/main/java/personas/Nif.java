@@ -105,4 +105,11 @@ public class Nif {
         return letra;
     }
 
+    @Override
+    public String toString() {
+        return "Nif{" + "numero=" + numero + " " + letra + ", fechaCaducidad=" + fechaCaducidad + '}';
+    }
+    
+    
+
 }

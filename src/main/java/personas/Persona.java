@@ -25,9 +25,7 @@ public abstract class Persona {
     public Persona() {
     }
 
-    public void renovarNif(LocalDate fechaSolicitud) {
-        System.out.println(nif.renovar(fechaSolicitud));
-    }
+    public abstract void renovarNif(LocalDate fechaSolicitud);
 
     public String getNombre() {
         return nombre;
@@ -52,7 +50,5 @@ public abstract class Persona {
     public void setNif(Nif nif) {
         this.nif = nif;
     }
-    
-    
 
 }

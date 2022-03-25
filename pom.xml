@@ -10,4 +10,5 @@
         <maven.compiler.target>11</maven.compiler.target>
         <exec.mainClass>com.mycompany.tarea6bhospitalruben.Tarea6BHospitalRuben</exec.mainClass>
     </properties>
+    <name>Tarea6CHospitalRuben</name>
 </project>

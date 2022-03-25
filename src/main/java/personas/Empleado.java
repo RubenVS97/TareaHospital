@@ -8,8 +8,8 @@ package personas;
  *
  * @author ruben
  */
-public abstract class Empleado extends Persona{
-    
+public abstract class Empleado extends Persona {
+
     private String numeroSeguridadSocial;
     private double salario;
 
@@ -26,8 +26,7 @@ public abstract class Empleado extends Persona{
 
     public Empleado() {
     }
-    
-    
+
     public abstract double calcularIRPF();
 
     public String getNumeroSeguridadSocial() {
@@ -45,7 +44,5 @@ public abstract class Empleado extends Persona{
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    
-    
-    
+
 }

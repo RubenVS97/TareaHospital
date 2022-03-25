@@ -4,11 +4,15 @@
  */
 package personas;
 
+import java.time.LocalDate;
+import java.util.Random;
+
 /**
  *
  * @author ruben
  */
-public class Paciente extends Persona{
+public class Paciente extends Persona {
+
     private String numeroHistoria;
 
     public Paciente(String numeroHistoria, String nombre, String apellido, Nif nif) {
@@ -22,9 +26,15 @@ public class Paciente extends Persona{
 
     public Paciente() {
     }
-    
-    public void tomarMedicina(){
-        
+
+    public void renovarNif(LocalDate fechaSolicitud) {
+        System.out.println(this.getNif().renovar(fechaSolicitud));
     }
-    
+
+    public void tomarMedicina() {
+        Random r = new Random();
+        String resultado = r.nextBoolean() ? "el paciente se ha curado" : "el paciente no se ha curado";
+        System.out.println(resultado);
+    }
+
 }
